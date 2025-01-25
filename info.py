@@ -18,8 +18,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '28103752'))
+API_HASH = environ.get('API_HASH', '479579601469809b9a9c8ffc15fbe11a')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
@@ -30,7 +30,7 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://t.me/How_To_Open_Linkl")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
 
 # Admins, Channels & Users
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002476414775'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
@@ -53,7 +53,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 # MongoDB information
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
 
-DATABASE_URI = environ.get('DATABASE_URI', "") # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Kishaaheer:Kishaaheer@kishaaheer.dxe4o.mongodb.net/?retryWrites=true&w=majority&appName=Kishaaheer") # IF Multiple Database Is False Then Fill Only This Database Url.
 if MULTIPLE_DATABASE == False:
     USER_DB_URI = DATABASE_URI
     OTHER_DB_URI = DATABASE_URI
@@ -65,8 +65,8 @@ else:
     FILE_DB_URI = environ.get('FILE_DB_URI', "") # This Db Is For File Data Store
     SEC_FILE_DB_URI = environ.get('SEC_FILE_DB_URI', "") # This Db is for File Data Store When First Db Is Going To Be Full.
     
-DATABASE_NAME = environ.get('DATABASE_NAME', "techvjautobot")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'techvjcollection')
+DATABASE_NAME = environ.get('DATABASE_NAME', "Kishaaheer")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kishaaheer')
 
 # Premium And Referal Settings
 PREMIUM_AND_REFERAL_MODE = bool(environ.get('PREMIUM_AND_REFERAL_MODE', True)) # Set Ture Or False
